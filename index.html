@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.box{
+			margin: 50px auto;
+			border:1px solid #ccc;
+			position: relative;
+		}
+		.box>p{
+			height: 25px;
+			line-height: 25px;
+			margin-top: 15px;
+			text-align: center;
+		}
+		.box>input{
+			background: #eee;
+			outline: none;
+			border:1px solid #ccc;
+			width: 60px;
+			height: 30px;
+			position: absolute;
+		}
+		.box>.left{
+			bottom: 15px;
+			left: 15px;
+		}
+		.box>.right{
+			bottom: 15px;
+			right: 15px;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="点击" id="btn">
+
+	<script src="js/script.js"></script>
+	<script>
+		let obj = {
+			background:'#000',
+			color:'#fff',
+			width:'300',
+			height:'200',
+			cont:'这是一个弹出框',
+			btn:['确定','取消']
+
+		}
+
+		btn.onclick = function(){
+			new show(obj)
+		}
+	</script>
+</body>
+</html>
